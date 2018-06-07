@@ -1,0 +1,28 @@
+﻿body{
+    background-image:url("../img/background.png");
+
+}
+/*İki ayrı formu sayfada ortamak için*/
+.ortalama{
+    margin-top:5%;
+}
+.ortalama2 {
+    margin-top: 5%;
+}
+/*Akıllı cihazlar için hr gösterme özelliği*/
+hr {
+    display: none;
+}
+@media screen and (max-width: 769px) {
+    hr {
+        display:block;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        border: solid 1px gray;
+    }
+}
+@media screen and (max-width: 769px) {
+    .ortalama2 {
+        margin-top:0%;
+    }
+}

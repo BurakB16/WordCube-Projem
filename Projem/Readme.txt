@@ -1,0 +1,8 @@
+Merhaba,
+
+Projeyi oluþtururken ilk önce formu dijital hale dönüþtürdüm. Bunun için Brackets editörünü kullandým. Tasarým yaparken kullandýðým diller HTML5 ve CSS3(BootStrap 4). 
+Daha sonra  Visual Studio 2017 ile ASP .NET MVC projesi oluþturarak önce form için bir controller oluþturdum daha sonra bu controler için bir View oluþturum. Bu View dijital formumun yayýmlanmasýnda iþe yarayacaktýr. 
+Daha sonra bir adet create adýnda controller oluþtudum. Bunu oluþturmamda ki amacým kullanýcýnýn formdan girdiði bilgileri Veri tabanýna kaydetmesini saðlamaktý. Create için bir View oluþturdum ve burada ilgili sayfayý tasarladým. Burada yer alan "Formu görüntüle" pdf ile gönderilen formun dijital halidir. "Formu indir" ise pdf dosyasýný inidirmenizi saðlayan bir  butondur. Alt kýsýmda kayýt iþlemi bulunmaktadýr. Burada kullanýcý kayýt olmak için butona týkladýðýnda ekrana gelen modals penceresi ile bilgilerini doldurarak kayýt iþlemini gerçekleþtirebilir. Kullanýcý giriþ iþlemi statik bir haldedir ve sadece form kontrolü yapmaktatýr. Bunlarýn tamamýný oluþtururken HTML5, CSS3(Bottstrap) ve ASP .NET MVC dillerinden faydalandým. HomeController anasayfayý yayýmlayan ve üzerinde create.cshtml i bulunduran controlerdir. 
+
+Burada Http post kullanarak gerekli bilgileri girerek anasayfada ki formun action kýsmýna da Create View için gerekli bilgileri girdim. Tum bunlarýn öncesinde MSSQL server manager 2014 ile bir Kullanýcýlar adýnda bir tablo oluþturdum ve ADO .NET Entity Models kullanrak projeme baðladým.
+Projemde bir layout'a ihtiyaç duymadým çünkü tek sayfalýk bir karþýlama sayfasý kullandým. Proje ilk açýldýðýnda Create.cshtml sayfasýný açmaktadýr. Bunu RouteConfig.cs sayfasýndan gerçekleþtirdim.

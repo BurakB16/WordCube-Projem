@@ -1,0 +1,142 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Genç Yetenekler Programı için hazırlanmış aday başvuru ana sayfası.">
+    <meta name="keywords" content="HTML5,CSS3,Bootstrap,JavaScript, ASP .NET MVC">
+    <meta name="author" content="Burak Boyraz">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+    <title>Genç Yetenekler Programı</title>
+</head>
+
+<body>
+
+
+    @*Mail Yolu İle Gönderilen Proje Formu*@
+    <div class="container text-center mt-5">
+    <h1>Genç Yetenek Programına Hoşgeldin</h1>
+    <h3>Programa katılım sağladığınız için teşekkür ederiz.</h3>
+    <h5>Görüşemede sana iletilen formu dijital olarak görütülebilir yada cihazına pdf olarak inidirebilirsin.</h5>
+        <div class="mt-3"> 
+        <button class="btn btn-light">
+            @Html.ActionLink("Formu Görüntüle","Index","Form") 
+            </button>
+        <button class="btn btn-light ml-3 text-primary"><a href="https://drive.google.com/file/d/1gpYwrqzvX9N11menQv-KBUV4rFYwNxOm/view" class="text-primary">PDF Olarak İndir.</a></button></div>
+    </div>
+    @*Kullanıcı Giriş/Kayıt*@
+    <div class="container-fluid p-0 m-0">
+        <div class="row text-center ortalama mr-0 p-0">
+            @*giriş alanı*@
+            <div class="col-md-12">
+                <h1>İlkkez mi?</h1>
+                <h3 class="mb-5">O halde önce kayıt ol. Butonuna tıklayarak kayıt olabilirsin.</h3>
+
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">
+                    Kayıt Olmak İçin
+                </button>
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">Kayıt Formu</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <form action="/Home/Create"  method="post">
+                                    <div class="form-group">
+                                        <label for="validationCustom011">Adınız</label>
+                                        <input type="text" class="form-control" id="validationCustom011" name="ad" placeholder="Adınız" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="validationCustom012">Soyadınız</label>
+                                        <input type="text" class="form-control" id="validationCustom012" name="soyad" placeholder="Soyadınız" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">E-Posta Adresiniz</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" name="mail" aria-describedby="emailHelp" placeholder="E-Posta" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="validationCustom0123">Kullanıcı Adınız</label>
+                                        <input type="text" class="form-control" id="validationCustom0123" name="kadi" placeholder="Adınız" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="validationServer06">Kullanıcı Şifreniz</label>
+                                        <input type="password" class="form-control" id="validationServer06" name="ksifre" placeholder="Şifreniz" required>
+                                    </div>
+                                    <button type="submit" name="kaydet" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">Kayıt İşlemini Tamamla!</button>
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="w-75" />
+            @*kayıt alanı*@
+            <div class="col-md-12 ortalama2 mb-5">
+                <h1 class="mb-5">Kullanıcı Girişi Yapmak İçin Butona Tıklaman Yeterli</h1>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter1">
+                    Giriş Yapmak İçin
+                </button>
+                <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">Giriş Formu</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="validationCustom01">Kullanıcı Adınız</label>
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Adınız" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="validationServer05">Kullanıcı Şifreniz</label>
+                                        <input type="password" class="form-control" id="validationServer05" placeholder="Şifreniz" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-info">Giriş Yap!</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer text-center">
+                                <p>
+                                    Henüz kayıt olmadıysanız lütfen kayıt olmak için
+                                    <a href="" data-toggle="modal" data-target="#exampleModalCenter">Burayı</a> tıklayınız.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="~/Scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="~/Scripts/umd/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+

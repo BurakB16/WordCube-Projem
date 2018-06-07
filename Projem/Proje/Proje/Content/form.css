@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    background-color: dimgray;
+}
+/*Genel Kullanım*/
+.height-200{height: 200px;}
+.mt-110{margin-top: 110px;}
+.mt-125{margin-top: 125px;}
+.mt-200{margin-top: 200px;}
+.ml-200{margin-left: 200px;}
+.ml-250{margin-left:250px;}
+.bgc-orange{background-color: darkorange;}
+.bgc-cblue{background-color: cadetblue;}
+.bgc-brown{background-color: saddlebrown;}
+.bgc-ping{background-color: deeppink;}
+.bgc-purple{background-color:rebeccapurple;}
+.c-red{color: red;}
+.c-black{color: black;}
+.c-gray{color:dimgray;}
+.c-white{color:white;}
+.c-orange{color:darkorange;}
+.c-blue{color: #A3C7EB;}
+.c-green{color: #9BD253;}
+.text-15{font-size: 15px;}
+.text-22{font-size: 22px;}
+.text-20{font-size: 19px; word-wrap:break-word;}
+.text-25{font-size: 25px;}
+.text-35{font-size: 35px;}
+.text-60{font-size: 60px;}
+.text-100{font-size: 90px;}
+.text-125{font-size: 125px;}
+.text-150{font-size: 150px;}
+.h-750px{height: 750px;}
+.text-un-line{
+    font-size: 40px;
+    font-style: italic;
+    text-decoration: underline;
+    z-index:1;
+}
+.box-shadow{box-shadow:0 0 2px 1px black;}
+/* Sayfa 7*/
+.y-border-ilk{
+    border:solid 1px;
+    border-radius: 50%;
+    width: 125%;
+    height: 225px;
+    text-align: center;}
+.y-border-iki{
+    border:solid 1px;
+    border-radius: 100%;
+    opacity: 0.6;
+    width: 350px;
+    height: 375px;
+    text-align: center;
+    position: relative;
+    left: 110px;
+    transform: translateX(-50%);}
+.y-p-iki{margin-top: 90px;}
+.y-border-uc{
+    border:solid 1px;
+    border-radius: 100%;
+    opacity: 0.6;
+    width: 700px;
+    height: 725px;
+    text-align: center;
+    position: absolute;
+    right: 50px;
+    z-index: 0;}
+.y-p-uc{margin-top: 200px;}
+/* Sayfa 9*/
+#hr-c-s{
+    border: none;
+    border:solid 2px dimgray;
+    position: relative;
+    top: 17%;
+    transform: translateY(-50%);
+}
+#hr-c-s2{
+    width: 420px;
+    border: none;
+    border:solid 2px dimgray;
+    position: relative;
+    top: 17%;
+    transform: translateY(-50%);
+}
+/* Div içinde ortalamak için*/
+.po-center{
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+}
+.po-center-p{
+  position: relative;
+  top: 80%;
+  transform: translateY(-50%);
+}
+/* Sayfa 12 */
+.img-po{
+  position: absolute;
+  top: 1116%;
+  left:1068px;
+  transform: translateY(-55%);
+}
+/* Sayfa 12 */
+.img-po12 {
+    position: absolute;
+    top: 1158%;
+    left: 1068px;
+    transform: translateY(-57%);
+}
+/*Sayfa Numaraları*/
+.s2-numaric{position: relative;
+  top: 17%;
+  transform: translateY(-50%);}
+.s3-numaric{position: relative;
+  top:3%;
+  transform: translateY(-50%);}
+.s4-numaric{position: relative;
+  top: 21%;
+  transform: translateY(-50%);}
+.s5-numaric{position: relative;
+  top: 43%;
+  transform: translateY(-50%);}
+.s6-numaric{position: relative;
+  top: 28%;
+  transform: translateY(-50%);}
+.s7-numaric{position: relative;
+  top: 7%;
+  transform: translateY(-50%);}
+.s8-numaric{position: relative;
+  top: 3%;
+  transform: translateY(-50%);}
+.s9-numaric{position: relative;
+  top: 7%;
+  transform: translateY(-50%);}
+.s10-numaric{position: relative;
+  top: 15%;
+  transform: translateY(-50%);}
+.s11-numaric{position: relative;
+  top: 10%;
+  transform: translateY(-50%);}
+.s12-numaric{position: relative;
+  top: -3%;
+  transform: translateY(-50%);}
+.s13-numaric{position: relative;
+  top: 50%;
+  transform: translateY(-50%);}
+
+
+
+
+
+
+
+
